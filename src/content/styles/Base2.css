@@ -1,0 +1,557 @@
+*, *::before, *::after {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  outline: 0;
+  text-rendering: optimizeLegibility;
+}
+
+blockquote {
+  quotes: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+main, header, aside, img {
+  display: block;
+}
+
+input:not([type=checkbox]):not([type=radio]), textarea, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield !important; /* Firefox */
+}
+
+hr {
+  height: 1px;
+  background: black;
+  margin: 16px 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: #f0f0f0;
+}
+
+.c-wrapper {
+  margin: 0 auto;
+}
+
+/* Common xs1, xs2 mobil*/
+@media all and (max-width: 767px) {
+  .c-wrapper {
+    width: calc(100% - 32px);
+  }
+}
+/* Common sm1, sm2 tablet */
+@media all and (min-width: 768px) and (max-width: 1319px) {
+  .c-wrapper {
+    width: 760px;
+  }
+}
+@media all and (min-width: 1320px) {
+  .c-wrapper {
+    width: 1300px;
+  }
+}
+.home-icon {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+.home-icon .home-icon-01 {
+  margin-top: 20px;
+  width: 60px;
+  height: 60px;
+  color: darkcyan;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 64px;
+}
+
+.home-img {
+  width: 100%;
+  border: 2px solid darkcyan;
+  border-radius: 16px;
+}
+
+.home-desc {
+  position: absolute;
+  z-index: 1;
+  margin-top: 80px;
+  text-align: center;
+  width: 100%;
+  color: darkcyan;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 64px;
+}
+
+.header {
+  background-color: darkcyan;
+}
+.header .header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-container .container-01 a .icon {
+  width: 30px;
+  height: 30px;
+  color: black;
+}
+.header .header-container .container-02 form input {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  color: var(--bs-body-color);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0.375rem;
+}
+.header .header-container .container-02 form .search-icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+}
+
+.intermediate-container {
+  background-color: #212529;
+  height: 60px;
+}
+
+.c-wrapper {
+  background-color: darkcyan;
+}
+.c-wrapper .contents {
+  display: flex;
+  padding: 16px;
+}
+.c-wrapper .contents .a-side {
+  background-color: white;
+  border: 3px solid #212529;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+}
+.c-wrapper .contents .a-side .a-side-01 {
+  border: 3px solid darkcyan;
+  border-radius: 16px;
+  padding: 10px;
+  background-color: #ff7364;
+}
+.c-wrapper .contents .a-side .a-side-01 .a-side-01-A li {
+  background-color: #ff7364;
+}
+.c-wrapper .contents .a-side .a-side-01 .a-side-01-A li a {
+  border: 3px solid darkcyan;
+  border-radius: 16px;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 64px;
+  text-align: center;
+  color: #ff7364;
+  background-color: white;
+}
+.c-wrapper .contents .outlet {
+  flex: 1;
+  background-color: white;
+  border: 3px solid #212529;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 760px;
+  padding: 10px;
+}
+.footer-container .a-item {
+  display: flex;
+  align-items: center;
+}
+.footer-container .a-item a {
+  cursor: pointer;
+}
+.footer-container .a-item a .icon-01 {
+  width: 30px;
+  height: 30px;
+  color: black;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 13px;
+}
+.footer-container .a-item span {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+}
+.footer-container hr {
+  background-color: white;
+  height: 12px;
+  width: 400px;
+  border-radius: 10px;
+}
+.footer-container .b-item {
+  display: flex;
+  align-items: center;
+}
+.footer-container .b-item li a {
+  cursor: pointer;
+}
+.footer-container .b-item li a .icon-02 {
+  width: 25px;
+  height: 25px;
+  color: black;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 13px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-container .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.modal-container .modal-content {
+  z-index: 2;
+  min-width: 50%;
+  min-height: 50%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 32px;
+  padding: 48px;
+}
+.modal-container .modal-content .modal-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 28px;
+}
+.modal-container .modal-content .modal-header a {
+  font-size: 28px;
+  font-weight: 700;
+}
+.modal-container .modal-content .modal-body {
+  background-color: #ff7364;
+  border: 3px solid darkcyan;
+  border-radius: 16px;
+  padding: 10px;
+}
+.form-edit > div:not(:last-child) {
+  display: flex;
+  justify-content: center;
+}
+.form-edit > div:not(:last-child) label {
+  color: darkcyan;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.error > * {
+  color: red;
+}
+.error input {
+  border: 1px solid red;
+}
+
+.modal-hr {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  height: 12px;
+  width: 719px;
+  border-radius: 10px;
+}
+
+.button-save {
+  display: flex;
+  justify-content: end;
+  margin-top: 40px;
+}
+.button-save button {
+  font-weight: 600;
+  padding: 9px;
+  color: #ff7364;
+  border: 2px solid darkcyan;
+  border-radius: 16px;
+  background-color: white;
+  margin-right: 7px;
+}
+
+.search-edit {
+  margin-left: 10px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  color: var(--bs-body-color);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0.375rem;
+}
+
+.products {
+  padding: 10px;
+}
+.products .header-01 {
+  display: flex;
+}
+.products .header-01 h1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products .header-01 button {
+  height: 40px;
+  padding: 5px;
+  color: #fff;
+  border: 2px solid black;
+  border-radius: 16px;
+  background-color: darkcyan;
+}
+.products .product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.products .product .card-style {
+  display: block;
+  padding: 10px;
+  border: 2px solid darkcyan;
+  border-radius: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.products .product .card-style h3 {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+}
+.products .product .card-style img {
+  width: 100%;
+  height: 160px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-bottom: 16px;
+  box-shadow: -15px 15px 0px rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+}
+.products .product .card-style span {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+.products .product .card-style p {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #532c59;
+}
+.products .product .card-style .list-icons {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+}
+.products .product .card-style .list-icons a .list-icon {
+  width: 20px;
+  height: 20px;
+  color: darkcyan;
+}
+
+.modal-close {
+  background: darkcyan;
+  color: #ff7364;
+  border-radius: 71px;
+}
+
+.modal-remove {
+  padding: 84px 0;
+}
+.modal-remove .a-item-01 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: darkcyan;
+}
+.modal-remove .a-item-02 {
+  display: flex;
+  justify-content: end;
+  margin-top: 40px;
+}
+.modal-remove .a-item-02 .a-item-02-A {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: 9px;
+  color: #ff7364;
+  border: 2px solid darkcyan;
+  border-radius: 16px;
+  background-color: white;
+  margin-right: 7px;
+}
+
+.categories {
+  padding: 10px;
+}
+.categories .header-01 h3 {
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.categories .header-01 button {
+  height: 40px;
+  padding: 5px;
+  color: #fff;
+  border: 2px solid black;
+  border-radius: 16px;
+  background-color: darkcyan;
+}
+.categories .categorie {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.categories .categorie .categorie-card {
+  display: block;
+  padding: 10px;
+  border: 2px solid darkcyan;
+  border-radius: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.categories .categorie .categorie-card img {
+  width: 100%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 16px;
+  box-shadow: -15px 15px 0px rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+}
+.categories .categorie .categorie-card h5 {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+}
+.categories .categorie .categorie-card .c-card-icon {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+}
+.categories .categorie .categorie-card .c-card-icon a .categorie-icon {
+  width: 20px;
+  height: 20px;
+  color: darkcyan;
+}
+
+.categorie-form > div:not(:last-child) {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+}
+.categorie-form > div:not(:last-child) label {
+  color: darkcyan;
+  font-size: 20px;
+  font-weight: 700;
+}
+.categorie-form > div:not(:last-child) input {
+  margin-left: 10px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  color: var(--bs-body-color);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0.375rem;
+}
+
+@font-face {
+  font-family: "Syne";
+  src: url("./Fonts/Syne-Regular.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Syne";
+  src: url("./Fonts/Syne-Medium.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Syne";
+  src: url("./Fonts/Syne-Bold.ttf");
+  font-weight: 700;
+}
+body {
+  font-family: "Syne";
+  font-size: 100%;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=Base2.css.map */
